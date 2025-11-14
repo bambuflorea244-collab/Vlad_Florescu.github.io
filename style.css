@@ -228,7 +228,7 @@ body {
   border: 1px solid var(--border);
 }
 
-/* Hero showcase */
+/* Featured image (cropped) */
 .hero-showcase {
   display: flex;
   justify-content: flex-end;
@@ -243,42 +243,19 @@ body {
   max-width: 360px;
 }
 
-.hero-card-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-
-.hero-card h2 {
-  font-size: 1.25rem;
-  margin: 0 0 0.6rem;
-}
-
-.hero-card-text {
-  font-size: 0.9rem;
-  color: #d4d7f2;
-  margin-bottom: 1.4rem;
-}
-
-/* Featured image style */
 .hero-featured-img {
   width: 100%;
   height: 200px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: #0b0c14;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
 .hero-featured-img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover; /* CROPS featured image */
 }
 
 /* Portfolio Grid */
@@ -302,7 +279,7 @@ body {
   flex-direction: column;
 }
 
-/* Square images — no cropping */
+/* Portfolio images — NOT cropped */
 .card-image img {
   display: block;
   width: 100%;
@@ -311,7 +288,7 @@ body {
   background: #0b0c14;
 }
 
-/* Card content */
+/* Card body */
 .card-body {
   padding: 1.1rem 1.2rem 1.3rem;
 }
@@ -389,7 +366,7 @@ body {
   font-size: 0.92rem;
 }
 
-/* Contact */
+/* Contact section */
 .contact-inner {
   display: flex;
   align-items: center;
@@ -397,10 +374,11 @@ body {
   gap: 2rem;
 }
 
-.contact-note {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--muted);
+/* Buttons spacing */
+.contact-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* Footer */
